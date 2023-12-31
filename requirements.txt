@@ -1,4 +1,4 @@
-pip==23.3.2
+pip==22.0.3
 absl-py==1.4.0
 anyio==4.0.0
 argon2-cffi==23.1.0
