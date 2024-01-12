@@ -27,10 +27,9 @@ st.write(
 # 获取当前脚本所在的目录
 import os
 
-current_path = os.getcwd()  # 获取当前文件夹的绝对路径
-relative_path = os.path.join(current_path, '2019-12.csv')  # 构建相对路径
 
-data = pd.read_csv(relative_path, parse_dates=['update_date'], encoding='gbk')
+
+data = pd.read_csv("..\\2019-12.csv", parse_dates=['update_date'], encoding='gbk')
 
 st.title('2019年12月份每天发表论文的数量')
 group = data.groupby(data.update_date.dt.day)
